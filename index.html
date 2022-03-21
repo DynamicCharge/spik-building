@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>СПИК - Билдинг</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d7f796e6-b982-4f3a-9dae-e214d0513617&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+<script defer="defer" src="./assets/scripts/main.js"></script><link href="./assets/styles/main..css" rel="stylesheet"></head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/img/logo..svg" alt="">
+            </a>
+            <ul class="nav">
+                <li class="nav__item"><a href="" class="nav__item__link">О проекте</a></li>
+                <li class="nav__item"><a href="" class="nav__item__link">Планировка</a></li>
+                <li class="nav__item"><a href="" class="nav__item__link">Расположение</a></li>
+                <li class="nav__item"><a href="" class="nav__item__link">Документы</a></li>
+                <li class="nav__item"><a href="" class="nav__item__link">Контакты</a></li>
+            </ul>
+            <a href="#" class="phone">+7 911 922 67 76</a>
+            <div class="burger">
+                <div class="burger__item"></div>
+                <div class="burger__item"></div>
+                <div class="burger__item"></div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile__nav">
+        <ul class="mobile__nav__list">
+            <li class="mobile__nav__list__item"><a href="" class="mobile__nav__list__item__link">О проекте</a></li>
+            <li class="mobile__nav__list__item"><a href="" class="mobile__nav__list__item__link">Планировка</a></li>
+            <li class="mobile__nav__list__item"><a href="" class="mobile__nav__list__item__link">Расположение</a></li>
+            <li class="mobile__nav__list__item"><a href="" class="mobile__nav__list__item__link">Окружение</a></li>
+            <li class="mobile__nav__list__item"><a href="" class="mobile__nav__list__item__link">Контакты</a></li>
+        </ul>
+        <div class="mobile__nav__wrapper">
+            <span>ул. Академика Крылова 4а</span>
+             <a href="" class="coll">
+                 <img src="assets/img/call..svg" alt="">
+             </a>
+        </div>
+    </div>
+
+    <main>
+        <section class="title">
+            <div class="container">
+                <div class="title__text">
+                    <h1 class="title__text__heading">Особняк на Черной речке, в аренду, для осмысленного ведения бизнеса!</h1>
+                    <span class="title__text__span">ул. Академика Крылова 4а</span>
+                </div>
+                <a href="" class="title__link">Записаться на показ</a>
+                <ul class="title__info-list">
+                    <li class="title__info-list__item"><span class="title__info-list__num">3 </span>этажа</li>
+                    <li class="title__info-list__item"><span class="title__info-list__num">50 </span>метров от метро</li>
+                    <li class="title__info-list__item"><span class="title__info-list__num">240 </span>м2 пространства</li>
+                </ul>
+                <a href="№" class="title__scroll-link">Листайте вниз</a>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <ul class="about__wrapper__list">
+                        <li class="about__wrapper__list__item">О проекте</li>
+                        <li class="about__wrapper__list__item">
+                            <span class="about__wrapper__list__item__heading">Адрес</span>
+                            Академика Крылова 4а, Приморский район Санкт-Петербурга 
+                        </li>
+                        <li class="about__wrapper__list__item">
+                            <span class="about__wrapper__list__item__heading">Девелопер</span>
+                            Российские архитекторы
+                        </li>
+                        <li class="about__wrapper__list__item">
+                            <span class="about__wrapper__list__item__heading">Год сдачи</span>
+                            2021
+                        </li>
+                    </ul>
+                </div>
+                <div class="about__wrapper">
+                    <h2 class="about__wrapper__heading"><span>Особняк</span>  ул. Академика Крылова 4a</h2>
+                    <p class="about__wrapper__desc">
+                        Симметричное конструкция и сдержанность в отделке фасада воплощают в этом
+                        доме лучшие традиции российской архитектуры <br><br>
+                        При строительстве были использованы долговечные экологичные материалы, энергосберегающие технологии, прогрессивные и безопасные инженерные системы — всё, что сделает дом прочным, надёжным и комфортным.
+                    </p>
+                </div>
+                <div class="about__wrapper">
+                    <h2 class="about__wrapper__heading"> <span>Направления бизнеса</span></h2>
+                    <p class="about__wrapper__desc">
+                        50 метров до ст.м. Черная речка. 100 м. до Ушаковской развязки — значительный  трафик — ежедневно.
+                    </p>
+                </div>
+                <div class="about__wrapper">
+                    <ul class="about__wrapper__ac-list">
+
+                        <li class="about__wrapper__ac-list__item">
+                            <div class="about__wrapper__ac-list__item__title accordion__title">
+                                <span class="about__wrapper__ac-list__item__title__heading"><strong>1. </strong>Кафе/ресторан</span>
+                                <span class="about__wrapper__ac-list__item__title__sign">+</span>
+                            </div>
+                            <div class="about__wrapper__ac-list__item__content accordion__content" style="display: none;">
+                                <p>
+                                    Удоброе расположение, небольшое расстояние до центра, а также универсальная и семметричная конструкция особняка удобно подойдет для многих сфер бизнеса.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about__wrapper__ac-list__item">
+                            <div class="about__wrapper__ac-list__item__title accordion__title">
+                                <span class="about__wrapper__ac-list__item__title__heading"><strong>2. </strong>Аптека</span>
+                                <span class="about__wrapper__ac-list__item__title__sign">+</span>
+                            </div>
+                            <div class="about__wrapper__ac-list__item__content accordion__content" style="display: none;">
+                                <p>
+                                    Удоброе расположение, небольшое расстояние до центра, а также универсальная и семметричная конструкция особняка удобно подойдет для многих сфер бизнеса.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about__wrapper__ac-list__item">
+                            <div class="about__wrapper__ac-list__item__title accordion__title">
+                                <span class="about__wrapper__ac-list__item__title__heading"><strong>3. </strong>Шоу-рум</span>
+                                <span class="about__wrapper__ac-list__item__title__sign">+</span>
+                            </div>
+                            <div class="about__wrapper__ac-list__item__content accordion__content" style="display: none;">
+                                <p>
+                                    Удоброе расположение, небольшое расстояние до центра, а также универсальная и семметричная конструкция особняка удобно подойдет для многих сфер бизнеса.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about__wrapper__ac-list__item">
+                            <div class="about__wrapper__ac-list__item__title accordion__title">
+                                <span class="about__wrapper__ac-list__item__title__heading"><strong>4. </strong>Ателье</span>
+                                <span class="about__wrapper__ac-list__item__title__sign">+</span>
+                            </div>
+                            <div class="about__wrapper__ac-list__item__content accordion__content" style="display: none;">
+                                <p>
+                                    Удоброе расположение, небольшое расстояние до центра, а также универсальная и семметричная конструкция особняка удобно подойдет для многих сфер бизнеса.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="about__wrapper__ac-list__item">
+                            <div class="about__wrapper__ac-list__item__title accordion__title">
+                                <span class="about__wrapper__ac-list__item__title__heading"><strong>5. </strong>Мед. клиника</span>
+                                <span class="about__wrapper__ac-list__item__title__sign">+</span>
+                            </div>
+                            <div class="about__wrapper__ac-list__item__content accordion__content" style="display: none;">
+                                <p>
+                                    Удоброе расположение, небольшое расстояние до центра, а также универсальная и семметричная конструкция особняка удобно подойдет для многих сфер бизнеса.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about__wrapper__ac-list__item">
+                            <div class="about__wrapper__ac-list__item__title accordion__title">
+                                <span class="about__wrapper__ac-list__item__title__heading"><strong>6. </strong>Банковский офис</span>
+                                <span class="about__wrapper__ac-list__item__title__sign">+</span>
+                            </div>
+                            <div class="about__wrapper__ac-list__item__content accordion__content" style="display: none;">
+                                <p>
+                                    Удоброе расположение, небольшое расстояние до центра, а также универсальная и семметричная конструкция особняка удобно подойдет для многих сфер бизнеса.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about__wrapper__ac-list__item">
+                            <div class="about__wrapper__ac-list__item__title accordion__title">
+                                <span class="about__wrapper__ac-list__item__title__heading"><strong>7. </strong>Представительство</span>
+                                <span class="about__wrapper__ac-list__item__title__sign">+</span>
+                            </div>
+                            <div class="about__wrapper__ac-list__item__content accordion__content" style="display: none;">
+                                <p>
+                                    Удоброе расположение, небольшое расстояние до центра, а также универсальная и семметричная конструкция особняка удобно подойдет для многих сфер бизнеса.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about__wrapper__ac-list__item">
+                            <div class="about__wrapper__ac-list__item__title accordion__title">
+                                <span class="about__wrapper__ac-list__item__title__heading"><strong>8. </strong>Магазин</span>
+                                <span class="about__wrapper__ac-list__item__title__sign">+</span>
+                            </div>
+                            <div class="about__wrapper__ac-list__item__content accordion__content" style="display: none;">
+                                <p>
+                                    Удоброе расположение, небольшое расстояние до центра, а также универсальная и семметричная конструкция особняка удобно подойдет для многих сфер бизнеса.
+                                </p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section> 
+        <section class="plan">
+            <div class="container">
+                <div class="plan__info-wrap">
+                    <div class="plan__info-wrap__text-container">
+                        <h2 class="plan__info-wrap__heading">
+                            <span>об особнячке</span>
+                            Планировка
+                        </h2>
+                        <p class="plan__info-wrap__text">
+                            Планировка трехэтажного дома площадью 240м2, разработанная российскими архитекторами.
+                        </p>
+                    </div>
+                    <ul class="plan__tabs-list">
+                        <li class="plan__tabs-list__item _tab-active" data-name="фасад">
+                            <div class="plan__tabs-list__item__radial">
+                                <div class="plan__tabs-list__item__radial__inner"></div>
+                            </div>
+                            <span>Фасад</span>
+                        </li>
+                        <li class="plan__tabs-list__item" data-name="цоколь">
+                            <div class="plan__tabs-list__item__radial">
+                                <div class="plan__tabs-list__item__radial__inner"></div>
+                            </div>
+                            <span>Цоколь</span>
+                        </li>
+                        <li class="plan__tabs-list__item" data-name="1 этаж">
+                            <div class="plan__tabs-list__item__radial">
+                                <div class="plan__tabs-list__item__radial__inner"></div>
+                            </div>
+                            <span>1 этаж</span>
+                        </li>
+                        <li class="plan__tabs-list__item" data-name="2 этаж">
+                            <div class="plan__tabs-list__item__radial">
+                                <div class="plan__tabs-list__item__radial__inner"></div>
+                            </div>
+                            <span>2 этаж</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="plan__slider-wrap" data-name="фасад">
+                    <div class="plan__main-slider">
+                        <div class="plan__main-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                        <div class="plan__main-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="plan__bot-slider">
+                        <div class="plan__bot-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                        <div class="plan__bot-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="plan__slider-wrap" data-name="цоколь" style="display: none;">
+                    <div class="plan__main-slider">
+                        <div class="plan__main-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                        <div class="plan__main-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="plan__bot-slider">
+                        <div class="plan__bot-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                        <div class="plan__bot-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="plan__slider-wrap" data-name="1 этаж" style="display: none;">
+                    <div class="plan__main-slider">
+                        <div class="plan__main-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                        <div class="plan__main-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="plan__bot-slider">
+                        <div class="plan__bot-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                        <div class="plan__bot-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="plan__slider-wrap" data-name="2 этаж" style="display: none;">
+                    <div class="plan__main-slider">
+                        <div class="plan__main-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                        <div class="plan__main-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="plan__bot-slider">
+                        <div class="plan__bot-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                        <div class="plan__bot-slider__item">
+                            <img src="assets/img/plan1..jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video">
+            видео с байрактара
+        </section>
+        <section class="placement">
+            <div class="container">
+                <div class="placement__heading">
+                    <h2 class="placement__head">Удобное расположение</h2>
+                    <p class="placement__desc">
+                        <strong>м. Черная речка, ул. Академика Крылова 4а</strong>
+                        Здание расположено всего в двух минутах хотьбы от метро, что будет удобно сотрудникам, а так же находится достаточно далеко от дороги, таким образом шум движения автомобилей не будет вас сильно беспокоить.
+                    </p>
+                </div>
+                <div class="placement__wrapper">
+                    <ul class="placement__tabs">
+                        <li class="placement__tabs__item">Все объекты</li>
+                        <li class="placement__tabs__item">ЗСД / КАД</li>
+                        <li class="placement__tabs__item">Транспортные узлы</li>
+                        <li class="placement__tabs__item">Метро</li>
+                    </ul>
+                    <div id="map"></div>
+                </div>
+            </div>
+        </section>
+        <section class="environment">
+            <!-- <img src="./assets/img/environment-bg.jpg" alt="" class="environment__bg"> -->
+            <div class="container"> 
+                <h2 class="environment__heading">Вдохновляющее <br> <span>окружение</span></h2>
+                <p class="environment__desc">Знаковые места и парки в пешей доступности</p>
+                <div class="environment__wrapper">
+                    <div class="environment__tabs">
+                        <div class="environment__tabs__item">Салтыковский сад</div>
+                        <div class="environment__tabs__item">Строгановский парк</div>
+                        <div class="environment__tabs__item">Парк тихий отдых</div>
+                        <div class="environment__tabs__item">Мигуновский сад</div>
+                        <div class="environment__tabs__item">Пионерский сад</div>
+                        <div class="environment__tabs__item">Место дуэли Пушкина</div>
+                    </div>
+                    <div class="environment__slider">
+                        <div class="environment__slider__item">
+                            <div class="environment__slider__item__img-box">
+                                <img src="assets/img/env1..jpg" alt="">
+                            </div>
+                            <div class="environment__slider__item__wrap">
+                                <div class="environment__slider__item__wrap__top">
+                                    <p class="environment__slider__item__wrap__top__time">
+                                        <strong>5</strong>
+                                        минут пешком
+                                    </p>
+                                    <p class="environment__slider__item__wrap__name">
+                                        Салтыковский <br>Парк
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="environment__slider__item">
+                            <div class="environment__slider__item__img-box">
+                                <img src="assets/img/env1..jpg" alt="">
+                            </div>
+                            <div class="environment__slider__item__wrap">
+                                <div class="environment__slider__item__wrap__top">
+                                    <p class="environment__slider__item__wrap__top__time">
+                                        <strong>5</strong>
+                                        минут пешком
+                                    </p>
+                                    <p class="environment__slider__item__wrap__name">
+                                        Салтыковский <br>Парк
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="environment__slider__controls">
+                        <button class="environment__slider__controls__button env-prev"><img src="assets/img/arrow..svg" alt=""></button>
+                        <button class="environment__slider__controls__button env-next"><img src="assets/img/arrow..svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="documents">
+            <div class="container">
+                <h2 class="documents__heading">ДОКУМЕНТЫ</h2>
+                <div class="documents__wrapper">
+                    <div class="documents__wrapper__item">
+                        <div class="documents__wrapper__item__wrap">
+                            <div class="documents__wrapper__item__icon-box">
+                                <img src="assets/img/download..svg" alt="">
+                            </div>
+                            <div class="documents__wrapper__item__text-box">
+                                <span class="documents__wrapper__item__text">проектная документация</span>
+                                <span class="documents__wrapper__item__text">pdf, 1.55mb</span>
+                            </div>
+                        </div>
+                        <div class="documents__wrapper__item__wrap">
+                            <span class="documents__wrapper__item__desc">«Специализированный застройщик»</span>
+                            <span class="documents__wrapper__item__desc">20.02.2021  11:00</span>
+                        </div>
+                    </div>
+                    <div class="documents__wrapper__item">
+                        <div class="documents__wrapper__item__wrap">
+                            <div class="documents__wrapper__item__icon-box">
+                                <img src="assets/img/download..svg" alt="">
+                            </div>
+                            <div class="documents__wrapper__item__text-box">
+                                <span class="documents__wrapper__item__text">проектная документация</span>
+                                <span class="documents__wrapper__item__text">pdf, 1.55mb</span>
+                            </div>
+                        </div>
+                        <div class="documents__wrapper__item__wrap">
+                            <span class="documents__wrapper__item__desc">«Специализированный застройщик»</span>
+                            <span class="documents__wrapper__item__desc">20.02.2021  11:00</span>
+                        </div>
+                    </div>
+                    <div class="documents__wrapper__item">
+                        <div class="documents__wrapper__item__wrap">
+                            <div class="documents__wrapper__item__icon-box">
+                                <img src="assets/img/download..svg" alt="">
+                            </div>
+                            <div class="documents__wrapper__item__text-box">
+                                <span class="documents__wrapper__item__text">проектная документация</span>
+                                <span class="documents__wrapper__item__text">pdf, 1.55mb</span>
+                            </div>
+                        </div>
+                        <div class="documents__wrapper__item__wrap">
+                            <span class="documents__wrapper__item__desc">«Специализированный застройщик»</span>
+                            <span class="documents__wrapper__item__desc">20.02.2021  11:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <form action="" class="order">
+                    <h2 class="order__heading">Записаться на просмотр</h2>
+                    <div class="order__wrap">
+                        <input type="text" class="order__wrap__input" placeholder="Имя" required>
+                        <input type="email" class="order__wrap__input" placeholder="E-mail" required>
+                        <label for="" class="order__wrap__label">
+                            <input type="checkbox" class="order__wrap__check" required>
+                            Принимаю условия обработки персональных данных.
+                        </label>
+                        <button class="order__wrap__submit" type="submit">Записаться</button>
+                    </div>
+                </form>
+                <div class="contacts__wrap">
+                    <div class="contacts__wrap__container">
+                        <span class="contacts__wrap__container__desc">Месторасположение</span>
+                        <span class="contacts__wrap__container__text">Санкт-Петербург, ул Академика Крылова, 4а</span>
+                    </div>
+                    <div class="contacts__wrap__container">
+                        <span class="contacts__wrap__container__desc">звоните — Пн - Пт 9.00-21.00</span>
+                        <a href="#" class="contacts__wrap__container__link">+7 911 922 67 76</a>
+                        <a href="#" class="contacts__wrap__container__link">mordmol@yandex.ru</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer__list">
+                <li class="footer__list__item"><a href="" class="footer__list__item__link">О проекте</a></li>
+                <li class="footer__list__item"><a href="" class="footer__list__item__link">Планировка</a></li>
+                <li class="footer__list__item"><a href="" class="footer__list__item__link">Расположение</a></li>
+                <li class="footer__list__item"><a href="" class="footer__list__item__link">Документы</a></li>
+                <li class="footer__list__item"><a href="" class="footer__list__item__link">Контакты</a></li>
+            </ul>
+            <span class="copy">ООО «РА-СТУДИО», 2022</span>
+        </div>
+    </footer>
+</body>
+</html>
